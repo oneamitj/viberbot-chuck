@@ -21,8 +21,9 @@ A simple viber bot created in python3 and deployed in heroku container.
 11. Create docker image and push to heroku `heroku container:push web -a <heroku_app_name>` (keep the name `web`)
 12. Release pushed docker image `heroku container:release web -a <heroku_app_name>`
 13. Open Heroku App's > Resources > Change Dyno Type > Turn ON `web` dyno
-14. Scale `web` dyno `heroku ps:scale web=1 -a`
+14. Scale `web` dyno `heroku ps:scale web=1 -a <heroku_app_name>`
 15. Open app (Top right of Heroku App page). Should reply "Viber bot that gives Chuck Norris joke as reply of each message."
 16. To check Heroku server logs `heroku logs --tail -a <heroku_app_name>`
 17. Check your Public Account Viber Bot in Viber; It should now have option to send message.
 18. Send any message to bot and it will reply with random Chuck Norris Facts
+19. An example [here](https://chats.viber.com/chucknfacts/)
